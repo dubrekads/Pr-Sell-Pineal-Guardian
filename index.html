@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-CDX1R6FTFL"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CDX1R6FTFL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-CDX1R6FTFL');
+  </script>
 
-  gtag('config', 'G-CDX1R6FTFL');
-</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pineal Guardian</title>
@@ -66,6 +66,14 @@
       margin-bottom: 16px;
     }
 
+    .blue-text {
+      color: #0057d9;
+    }
+
+    .green-text {
+      color: #00b3a4;
+    }
+
     p {
       font-size: 16px;
       line-height: 1.6;
@@ -81,18 +89,17 @@
     ul li {
       font-size: 16px;
       margin-bottom: 12px;
-      padding-left: 32px; /* espaço para a seta */
+      padding-left: 32px;
       position: relative;
     }
 
-    /* 🔽 AQUI ESTÁ A SETA */
     ul li::before {
       content: "➜";
       position: absolute;
       left: 0;
-      color: #1fa84f;
+      color: #00b3a4;
       font-weight: bold;
-      font-size: 18px;
+      font-size: 20px;
     }
 
     .cta-button {
@@ -126,6 +133,22 @@
         margin-right: 8px;
       }
     }
+
+    .footer {
+      max-width: 1100px;
+      margin: 60px auto 20px;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+    }
+
+    .footer .disclaimer {
+      margin-top: 10px;
+      font-size: 12px;
+      color: #888;
+      line-height: 1.5;
+    }
   </style>
 </head>
 
@@ -134,16 +157,20 @@
   <div class="container">
 
     <div class="product-image">
-      <!-- 🔽 TROQUE A IMAGEM AQUI -->
       <img src="Pineal-Guardian-X.png" alt="Pineal Guardian">
     </div>
 
     <div class="content">
       <div class="badge">Special Offer</div>
 
-      <h1>Pineal Guardian</h1>
+      <h1>
+        <span class="blue-text">Pineal</span>
+        <span class="green-text">Guardian</span>
+      </h1>
 
-      <p>A premium dietary supplement designed to support overall wellness and pineal gland health.</p>
+      <p>
+        A premium dietary supplement designed to support overall wellness and pineal gland health.
+      </p>
 
       <ul>
         <li>Free shipping</li>
@@ -152,11 +179,22 @@
         <li>Free ShipSelect™ delivery</li>
       </ul>
 
-      <!-- 🔽 TROQUE O LINK DO SITE OFICIAL AQUI -->
-      <a href="https://pinealguardianvip.com/ds/indexts.php#aff=ErikMoraes" class="cta-button">Go to Official Website</a>
+      <a href="https://pinealguardianvip.com/ds/indexts.php#aff=ErikMoraes" class="cta-button">
+        Go to Official Website
+      </a>
     </div>
 
   </div>
 
+  <footer class="footer">
+    <p>© 2026 Pineal Guardian. All rights reserved.</p>
+    <p class="disclaimer">
+      These statements have not been evaluated by the Food and Drug Administration.
+      This product is not intended to diagnose, treat, cure, or prevent any disease.
+      Results may vary.
+    </p>
+  </footer>
+
 </body>
 </html>
+
