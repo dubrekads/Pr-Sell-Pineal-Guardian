@@ -22,12 +22,18 @@
       font-family: Arial, Helvetica, sans-serif;
     }
 
+    html, body {
+      height: 100%;
+    }
+
     body {
       background: #ffffff;
       color: #1d1d1f;
+      display: flex;
+      flex-direction: column;
     }
 
-    /* ===== TOP BLUE BAR ===== */
+    /* ===== TOP BAR ===== */
     .top-bar {
       background: linear-gradient(90deg, #004aad, #007bff);
       color: #fff;
@@ -38,10 +44,17 @@
       letter-spacing: 0.5px;
     }
 
-    /* ===== MAIN CONTENT ===== */
+    /* ===== MAIN CONTENT (CENTRALIZADO) ===== */
+    .main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
     .container {
       max-width: 1200px;
-      margin: 0 auto;
+      width: 100%;
       padding: 80px 20px;
       display: flex;
       align-items: center;
@@ -72,14 +85,14 @@
       border-radius: 20px;
       font-size: 14px;
       font-weight: bold;
-      margin-bottom: 20px;
+      margin-bottom: 18px;
     }
 
     h1 {
       font-size: 46px;
       font-weight: 800;
-      margin-bottom: 20px;
       line-height: 1.2;
+      margin-bottom: 8px;
     }
 
     .blue-text {
@@ -90,12 +103,27 @@
       color: #1fa84f;
     }
 
-    p {
+    /* ===== PRICE ===== */
+    .price {
+      font-size: 22px;
+      font-weight: bold;
+      color: #1fa84f;
+      margin-bottom: 18px;
+    }
+
+    .price span {
+      color: #444;
+      font-size: 16px;
+      font-weight: normal;
+    }
+
+    /* ===== DESCRIPTION ===== */
+    .description {
       font-size: 18px;
       color: #444;
       line-height: 1.6;
       margin-bottom: 26px;
-      max-width: 520px;
+      max-width: 540px;
     }
 
     ul {
@@ -136,7 +164,7 @@
       opacity: 0.95;
     }
 
-    /* ===== BOTTOM BLUE BAR + FOOTER ===== */
+    /* ===== BOTTOM BAR / FOOTER ===== */
     .bottom-bar {
       background: linear-gradient(90deg, #004aad, #007bff);
       color: #fff;
@@ -173,7 +201,7 @@
         gap: 50px;
       }
 
-      p {
+      .description {
         margin-left: auto;
         margin-right: auto;
       }
@@ -198,43 +226,47 @@
   </div>
 
   <!-- MAIN CONTENT -->
-  <div class="container">
+  <div class="main">
+    <div class="container">
 
-    <div class="product-image">
-      <!-- TROQUE A IMAGEM AQUI -->
-      <img src="Pineal-Guardian-X.png" alt="Pineal Guardian">
+      <div class="product-image">
+        <img src="Pineal-Guardian-X.png" alt="Pineal Guardian">
+      </div>
+
+      <div class="content">
+        <div class="badge">Special Offer</div>
+
+        <h1>
+          <span class="blue-text">Pineal</span>
+          <span class="green-text">Guardian</span>
+        </h1>
+
+        <div class="price">
+          Only $39 <span>per bottle</span>
+        </div>
+
+        <p class="description">
+          Pineal Guardian is a premium dietary supplement formulated with carefully selected
+          ingredients to support pineal gland health, mental clarity, and overall well-being.
+        </p>
+
+        <ul>
+          <li>Free shipping</li>
+          <li>4 free bonuses</li>
+          <li>365-day money-back guarantee</li>
+          <li>Free ShipSelect™ delivery</li>
+        </ul>
+
+        <a href="https://pinealguardianvip.com/ds/indexts.php#aff=ErikMoraes"
+           class="cta-button">
+          Go to Official Website
+        </a>
+      </div>
+
     </div>
-
-    <div class="content">
-      <div class="badge">Special Offer</div>
-
-      <h1>
-        <span class="blue-text">Pineal</span>
-        <span class="green-text">Guardian</span>
-      </h1>
-
-      <p>
-        A premium dietary supplement designed to support overall wellness
-        and pineal gland health.
-      </p>
-
-      <ul>
-        <li>Free shipping</li>
-        <li>4 free bonuses</li>
-        <li>365-day money-back guarantee</li>
-        <li>Free ShipSelect™ delivery</li>
-      </ul>
-
-      <!-- TROQUE O LINK AQUI -->
-      <a href="https://pinealguardianvip.com/ds/indexts.php#aff=ErikMoraes"
-         class="cta-button">
-        Go to Official Website
-      </a>
-    </div>
-
   </div>
 
-  <!-- BOTTOM BAR + FOOTER -->
+  <!-- BOTTOM BAR / FOOTER (COLADO NO FIM) -->
   <div class="bottom-bar">
     <h3>OFFICIAL WEBSITE • SAFE & SECURE ORDER • MADE IN THE USA</h3>
 
