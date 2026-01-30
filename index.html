@@ -2,16 +2,16 @@
 <html lang="en-US">
 <head>
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CDX1R6FTFL"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-CDX1R6FTFL');
-  </script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CDX1R6FTFL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  gtag('config', 'G-CDX1R6FTFL');
+</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Pineal Guardian</title>
 
   <style>
@@ -23,38 +23,30 @@
     }
 
     body {
-      background: #f4f6f8;
+      background: #ffffff;
       color: #1d1d1f;
     }
 
-    /* 🔵 FAIXAS AZUIS */
-    .blue-bar {
-      width: 100%;
-      background: #0057d9;
+    /* ===== TOP BLUE BAR ===== */
+    .top-bar {
+      background: linear-gradient(90deg, #004aad, #007bff);
       color: #fff;
       text-align: center;
       padding: 14px 20px;
-      font-size: 14px;
+      font-size: 16px;
       font-weight: bold;
       letter-spacing: 0.5px;
     }
 
-    /* 🔽 ÁREA PRINCIPAL CENTRALIZADA */
-    .main-wrapper {
-      min-height: calc(100vh - 120px);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
+    /* ===== MAIN CONTENT ===== */
     .container {
-      max-width: 1100px;
-      width: 100%;
-      padding: 40px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 80px 20px;
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 60px;
+      gap: 80px;
     }
 
     .product-image {
@@ -63,7 +55,8 @@
     }
 
     .product-image img {
-      max-width: 100%;
+      max-width: 420px;
+      width: 100%;
       height: auto;
     }
 
@@ -72,45 +65,48 @@
     }
 
     .badge {
-      background: #e6f0ff;
-      color: #0057d9;
       display: inline-block;
-      padding: 8px 14px;
-      border-radius: 6px;
+      background: #0b5ed7;
+      color: #fff;
+      padding: 8px 18px;
+      border-radius: 20px;
       font-size: 14px;
-      margin-bottom: 20px;
       font-weight: bold;
+      margin-bottom: 20px;
     }
 
     h1 {
-      font-size: 36px;
-      margin-bottom: 16px;
+      font-size: 46px;
+      font-weight: 800;
+      margin-bottom: 20px;
+      line-height: 1.2;
     }
 
     .blue-text {
-      color: #0057d9;
+      color: #0b5ed7;
     }
 
     .green-text {
-      color: #00b3a4;
+      color: #1fa84f;
     }
 
     p {
-      font-size: 16px;
-      line-height: 1.6;
-      margin-bottom: 20px;
+      font-size: 18px;
       color: #444;
+      line-height: 1.6;
+      margin-bottom: 26px;
+      max-width: 520px;
     }
 
     ul {
       list-style: none;
-      margin-bottom: 30px;
+      margin-bottom: 36px;
     }
 
     ul li {
-      font-size: 16px;
-      margin-bottom: 12px;
-      padding-left: 32px;
+      font-size: 18px;
+      margin-bottom: 14px;
+      padding-left: 34px;
       position: relative;
     }
 
@@ -118,31 +114,68 @@
       content: "➜";
       position: absolute;
       left: 0;
-      color: #00b3a4;
-      font-weight: bold;
+      color: #1fa84f;
       font-size: 20px;
+      font-weight: bold;
     }
 
     .cta-button {
       display: inline-block;
-      background: #00b3a4;
+      background: linear-gradient(180deg, #2ecc71, #1fa84f);
       color: #fff;
       text-decoration: none;
-      padding: 16px 36px;
-      font-size: 18px;
+      padding: 18px 44px;
+      font-size: 20px;
       font-weight: bold;
       border-radius: 6px;
-      transition: 0.3s;
+      transition: 0.3s ease;
     }
 
     .cta-button:hover {
-      background: #009688;
+      transform: translateY(-2px);
+      opacity: 0.95;
     }
 
+    /* ===== BOTTOM BLUE BAR + FOOTER ===== */
+    .bottom-bar {
+      background: linear-gradient(90deg, #004aad, #007bff);
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .bottom-bar h3 {
+      font-size: 20px;
+      margin-bottom: 12px;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+    }
+
+    .bottom-bar p {
+      font-size: 14px;
+      color: #e0e0e0;
+      line-height: 1.6;
+      max-width: 900px;
+      margin: 10px auto 0;
+    }
+
+    .copyright {
+      margin-top: 16px;
+      font-size: 13px;
+      color: #cfd8ff;
+    }
+
+    /* ===== RESPONSIVE ===== */
     @media (max-width: 900px) {
       .container {
         flex-direction: column;
         text-align: center;
+        gap: 50px;
+      }
+
+      p {
+        margin-left: auto;
+        margin-right: auto;
       }
 
       ul li {
@@ -154,62 +187,67 @@
         margin-right: 8px;
       }
     }
-
-    /* 🔵 FOOTER DENTRO DA FAIXA */
-    .footer-bar {
-      background: #0057d9;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-      font-size: 13px;
-    }
-
-    .footer-bar .disclaimer {
-      margin-top: 10px;
-      font-size: 12px;
-      opacity: 0.85;
-      line-height: 1.5;
-    }
   </style>
 </head>
 
 <body>
 
-  <!-- 🔵 FAIXA AZUL TOPO -->
-  <div class="blue-bar">
+  <!-- TOP BAR -->
+  <div class="top-bar">
     FREE SHIPPING • 4 FREE BONUSES • 365-DAY GUARANTEE
   </div>
 
-  <!-- 🔽 CONTEÚDO CENTRALIZADO -->
-  <div class="main-wrapper">
-    <div class="container">
+  <!-- MAIN CONTENT -->
+  <div class="container">
 
-      <div class="product-image">
-        <img src="Pineal-Guardian-X.png" alt="Pineal Guardian">
-      </div>
+    <div class="product-image">
+      <!-- TROQUE A IMAGEM AQUI -->
+      <img src="Pineal-Guardian-X.png" alt="Pineal Guardian">
+    </div>
 
-      <div class="content">
-        <div class="badge">Special Offer</div>
+    <div class="content">
+      <div class="badge">Special Offer</div>
 
-        <h1>
-          <span class="blue-text">Pineal</span>
-          <span class="green-text">Guardian</span>
-        </h1>
+      <h1>
+        <span class="blue-text">Pineal</span>
+        <span class="green-text">Guardian</span>
+      </h1>
 
-        <p>
-          A premium dietary supplement designed to support overall wellness and pineal gland health.
-        </p>
+      <p>
+        A premium dietary supplement designed to support overall wellness
+        and pineal gland health.
+      </p>
 
-        <ul>
-          <li>Free shipping</li>
-          <li>4 free bonuses</li>
-          <li>365-day money-back guarantee</li>
-          <li>Free ShipSelect™ delivery</li>
-        </ul>
+      <ul>
+        <li>Free shipping</li>
+        <li>4 free bonuses</li>
+        <li>365-day money-back guarantee</li>
+        <li>Free ShipSelect™ delivery</li>
+      </ul>
 
-        <a href="https://pinealguardianvip.com/ds/indexts.php#aff=ErikMoraes" class="cta-button">
-          Go to Official Website
-        </a>
-      </div>
+      <!-- TROQUE O LINK AQUI -->
+      <a href="https://pinealguardianvip.com/ds/indexts.php#aff=ErikMoraes"
+         class="cta-button">
+        Go to Official Website
+      </a>
+    </div>
 
-    </d
+  </div>
+
+  <!-- BOTTOM BAR + FOOTER -->
+  <div class="bottom-bar">
+    <h3>OFFICIAL WEBSITE • SAFE & SECURE ORDER • MADE IN THE USA</h3>
+
+    <p>
+      These statements have not been evaluated by the Food and Drug Administration.
+      This product is not intended to diagnose, treat, cure, or prevent any disease.
+      Results may vary.
+    </p>
+
+    <div class="copyright">
+      © 2026 Pineal Guardian. All rights reserved.
+    </div>
+  </div>
+
+</body>
+</html>
