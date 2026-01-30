@@ -27,12 +27,33 @@
       color: #1d1d1f;
     }
 
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 60px 20px;
+    /* 🔵 FAIXAS AZUIS */
+    .blue-bar {
+      width: 100%;
+      background: #0057d9;
+      color: #fff;
+      text-align: center;
+      padding: 14px 20px;
+      font-size: 14px;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+    }
+
+    /* 🔽 ÁREA PRINCIPAL CENTRALIZADA */
+    .main-wrapper {
+      min-height: calc(100vh - 120px);
       display: flex;
       align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      max-width: 1100px;
+      width: 100%;
+      padding: 40px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       gap: 60px;
     }
 
@@ -134,19 +155,19 @@
       }
     }
 
-    .footer {
-      max-width: 1100px;
-      margin: 60px auto 20px;
-      padding: 20px;
+    /* 🔵 FOOTER DENTRO DA FAIXA */
+    .footer-bar {
+      background: #0057d9;
+      color: #fff;
       text-align: center;
-      font-size: 14px;
-      color: #666;
+      padding: 20px;
+      font-size: 13px;
     }
 
-    .footer .disclaimer {
+    .footer-bar .disclaimer {
       margin-top: 10px;
       font-size: 12px;
-      color: #888;
+      opacity: 0.85;
       line-height: 1.5;
     }
   </style>
@@ -154,47 +175,41 @@
 
 <body>
 
-  <div class="container">
-
-    <div class="product-image">
-      <img src="Pineal-Guardian-X.png" alt="Pineal Guardian">
-    </div>
-
-    <div class="content">
-      <div class="badge">Special Offer</div>
-
-      <h1>
-        <span class="blue-text">Pineal</span>
-        <span class="green-text">Guardian</span>
-      </h1>
-
-      <p>
-        A premium dietary supplement designed to support overall wellness and pineal gland health.
-      </p>
-
-      <ul>
-        <li>Free shipping</li>
-        <li>4 free bonuses</li>
-        <li>365-day money-back guarantee</li>
-        <li>Free ShipSelect™ delivery</li>
-      </ul>
-
-      <a href="https://pinealguardianvip.com/ds/indexts.php#aff=ErikMoraes" class="cta-button">
-        Go to Official Website
-      </a>
-    </div>
-
+  <!-- 🔵 FAIXA AZUL TOPO -->
+  <div class="blue-bar">
+    FREE SHIPPING • 4 FREE BONUSES • 365-DAY GUARANTEE
   </div>
 
-  <footer class="footer">
-    <p>© 2026 Pineal Guardian. All rights reserved.</p>
-    <p class="disclaimer">
-      These statements have not been evaluated by the Food and Drug Administration.
-      This product is not intended to diagnose, treat, cure, or prevent any disease.
-      Results may vary.
-    </p>
-  </footer>
+  <!-- 🔽 CONTEÚDO CENTRALIZADO -->
+  <div class="main-wrapper">
+    <div class="container">
 
-</body>
-</html>
+      <div class="product-image">
+        <img src="Pineal-Guardian-X.png" alt="Pineal Guardian">
+      </div>
 
+      <div class="content">
+        <div class="badge">Special Offer</div>
+
+        <h1>
+          <span class="blue-text">Pineal</span>
+          <span class="green-text">Guardian</span>
+        </h1>
+
+        <p>
+          A premium dietary supplement designed to support overall wellness and pineal gland health.
+        </p>
+
+        <ul>
+          <li>Free shipping</li>
+          <li>4 free bonuses</li>
+          <li>365-day money-back guarantee</li>
+          <li>Free ShipSelect™ delivery</li>
+        </ul>
+
+        <a href="https://pinealguardianvip.com/ds/indexts.php#aff=ErikMoraes" class="cta-button">
+          Go to Official Website
+        </a>
+      </div>
+
+    </d
